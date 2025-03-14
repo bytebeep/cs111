@@ -26,6 +26,42 @@ int main() {
 5. Practice the use of escape sequences. Escape sequences are a special class of symbols. Try to use \t,\n,\\,\? ,\' and others, observe the output result.
 
 
-
 Hint: It is worth noting that you should try not to specify these characters when using scanf to input.
 
+
+
+
+
+
+
+6. This is an important tip. Every time you enter a character, or any other variable, you leave a \n in the input stream. Then when you want to enter another char variable, the program will read this \n into it. So, the solution to this problem is to add a getchar() between the two scanfs to read away the \n. 
+
+Try running the following two pieces of code and try to solve the problem.
+
+
+
+	char a, b;
+
+	a = getchar();
+
+	b = getchar();
+
+	printf("%c", a);
+
+	printf("%c", b);
+
+
+
+
+
+	char a;
+
+	int c;
+
+	scanf("%d", &c);
+
+	b = getchar();
+
+	printf("%d", c);
+
+	printf("%c", b);
