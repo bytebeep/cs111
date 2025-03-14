@@ -1,0 +1,31 @@
+week4 lab
+4. When you try to manipulate the float variable, be sure to pay attention to its scope of representation, which is exactly what it should be for any variable. Execute this code and observe what happened.
+
+
+
+#include <stdio.h>
+
+int main() {
+
+	float a, b;
+
+	a = 1234567890.0f;
+
+	b = a + 20;
+
+	printf("%f\n", a);
+
+	printf("%f\n", b);
+
+	return 0;
+
+}
+
+
+
+5. Practice the use of escape sequences. Escape sequences are a special class of symbols. Try to use \t,\n,\\,\? ,\' and others, observe the output result.
+
+
+
+Hint: It is worth noting that you should try not to specify these characters when using scanf to input.
+
