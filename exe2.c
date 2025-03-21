@@ -9,7 +9,7 @@ int main()
 	printf("Please enter an ASCII code value \n");
 	scanf("%d",&a);
 }while (a <32 ||a > 127); 
-printf("The character is £º %c\n",(char)a);
+printf("The character is Â£Âº %c\n",(char)a);
 return 0;
 	
 }
